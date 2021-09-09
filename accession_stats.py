@@ -40,15 +40,15 @@ for line in fh:
     items = line.split(',')
     accn_id = items[0]
     repo = items[1]
-    post_extent = items[3]
+    post_extent = items[4]
     if post_extent == '':
         post_extent = 0
     post_extent = float(post_extent)
-    bd_extent = items[4]
+    bd_extent = items[5]
     if bd_extent == '':
         bd_extent = 0
     bd_extent = float(bd_extent)
-    bd_measure = items[5]
+    bd_measure = items[6]
     if bd_measure == 'KB':
         bd_extent = bd_extent / 1e9
     if bd_measure == 'MB':
